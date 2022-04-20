@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <form class="form" id="calc-form">
+        <div>
+            <input type="number" id="consumption" required placeholder="l/100km"/>
+            <input type="number" id="price" placeholder="price per l"/>
+        </div>
+        <div>
+            <input type="number" id="distance" required placeholder="distance (km)"/>
+            <input type="number" id="volume" placeholder="tank volume (l)"/>
+        </div>
+        <button type="submit">Calculate</button>
+    </form>  
+    <div class="results hidden">
+         Results: 
+        <p id="litres-value">Amount of litres: <span>350 hz anything</span> litres are required. </p>
+        <p id="ref-value">Required refuelings: <span>350 hz anything</span> refuelings are required. </p>
+        <p id="price-value">Total price: <span>350 hz anything</span> will be spent. </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
