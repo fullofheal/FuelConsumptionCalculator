@@ -2,13 +2,42 @@
     padding: 20px;
 }
 
-.form input, .form button {
+/* .form button {
     padding: 10px;
     margin: 10px;
     border-radius: 0;
     border: 1px solid black;
-}
+} */
 
 .hidden {
     display: none;
+}
+
+.input-group .input-group-text {
+    display: block;
+    min-width: 84px;
+    margin: 0 auto;
+}
+
+.calc-container {
+    max-width: 720px;
+    padding: 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.results p {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.container .results {
+    padding: 20px;
+}
+
+h4 {
+    text-decoration: underline;
 }

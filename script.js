@@ -11,8 +11,6 @@ const keys = {
     dis: 'distance'
 };
 
-
-
 function displayRes(id, value) {
     const total2 = document.getElementById(id);
     if (value) {
