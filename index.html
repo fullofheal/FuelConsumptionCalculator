@@ -5,26 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    <form class="form" id="calc-form">
-        <div>
-            <input type="number" id="consumption" required placeholder="l/100km"/>
-            <input type="number" id="price" placeholder="price per l"/>
+    <div class="container calc-container">
+        <form class="form" id="calc-form">
+            <div class="input-group mb-3">
+                <input type="number" step="0.01" id="consumption" class="form-control" placeholder="Consumption">
+                <span class="input-group-text">l/100km</span>
+            </div>
+            <div class="input-group mb-3">
+                <input type="number"  step="0.01" id="price" class="form-control" placeholder="Price per litre">
+            </div>
+            <div class="input-group mb-3">
+                <input type="number" step="0.01" id="distance" class="form-control" placeholder="Distance">
+                <span class="input-group-text">km</span>
+            </div>
+            <div class="input-group mb-3">
+                <input type="number" step="0.01" id="volume" class="form-control" placeholder="Tank volume">
+                <span class="input-group-text">litres</span>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="btn btn-outline-warning me-3">Calculate</button>
+                <button type="reset" class="btn btn-outline-info">Reset</button>
+            </div>
+    </div>
+    <div class="container calc-container">
+        <div class="results hidden">
+                <h4>Results:</h4> 
+                <p id="litres-value">Amount of litres: <span>350 hz anything</span> litres are required. </p>
+                <p id="ref-value">Required refuelings: <span>350 hz anything</span> refuelings are required. </p>
+                <p id="price-value">Total price: <span>350 hz anything</span> will be spent. </p>
         </div>
-        <div>
-            <input type="number" id="distance" required placeholder="distance (km)"/>
-            <input type="number" id="volume" placeholder="tank volume (l)"/>
-        </div>
-        <button type="submit">Calculate</button>
-        <button type="reset">Reset</button>
-    </form>  
-    <div class="results hidden">
-         Results: 
-        <p id="litres-value">Amount of litres: <span>350 hz anything</span> litres are required. </p>
-        <p id="ref-value">Required refuelings: <span>350 hz anything</span> refuelings are required. </p>
-        <p id="price-value">Total price: <span>350 hz anything</span> will be spent. </p>
     </div>
     <script src="script.js"></script>
 </body>
